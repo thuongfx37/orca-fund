@@ -460,7 +460,7 @@ main .sidebar {
 
 .course-list {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   margin-top: 20px;
   overflow: hidden;
   /* background-color: red; */
@@ -578,4 +578,36 @@ main .sidebar {
 
 .course-item .course-item__top {
   cursor: default;
+}
+
+/* Free Course  */
+.free-course {
+  margin-top: 20px;
+}
+.free-course .free-course__topic-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.free-course h2 a {
+  color: var(--title-color);
+}
+
+.free-course .free-course__topic-name a:nth-child(2) {
+  color: #fa8c16;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.free-course .course-item__bottom {
+  color: var(--desc-color);
+}
+
+.free-course .course-item__bottom p {
+  font-size: 1.4rem;
+}
+
+.free-course .course-item__bottom p span {
+  margin-left: 10px;
 }
