@@ -1,0 +1,51 @@
+/* PC  */
+@media (min-width: 1113px) {
+  .search-mb {
+    display: none;
+  }
+}
+
+/* Low PC */
+@media (min-width: 1023px) and (max-width: 1112px) {
+  .search-mb {
+    display: none;
+  }
+}
+
+/* Tablet and Mobile  */
+@media (max-width: 1022px) {
+  main .sidebar,
+  .user-avatar,
+  .header-mid,
+  .btn-course {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+  #apps {
+    margin: 0 32px;
+  }
+  header {
+    padding: 0 32px;
+  }
+}
+
+/* Tablet  */
+@media (min-width: 740px) and (max-width: 1022px) {
+}
+
+/* Mobile  */
+@media (max-width: 739px) {
+  .slider-item .slider-right,
+  .slider-control {
+    display: none;
+  }
+  .slider-list {
+    overflow: auto;
+  }
+  .slider-item .slider-left {
+    width: 100%;
+  }
+}
