@@ -223,6 +223,12 @@ main .apps {
 main .sidebar {
   width: 96px;
   padding: 0 8px;
+}
+
+.sidebar-container {
+  position: sticky;
+  top: 66px;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -426,6 +432,7 @@ main .sidebar {
 }
 
 /* Course  */
+.popular h2 a,
 #post h2,
 #course h2 {
   font-size: 2.4rem;
@@ -581,19 +588,21 @@ main .sidebar {
 }
 
 /* Free Course  */
+.popular,
 .free-course {
   margin-top: 20px;
 }
+.popular .popular__topic-name,
 .free-course .free-course__topic-name {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
+.popular h2 a,
 .free-course h2 a {
   color: var(--title-color);
 }
-
+.popular .popular__topic-name a:nth-child(2),
 .free-course .free-course__topic-name a:nth-child(2) {
   color: #fa8c16;
   font-weight: 500;
@@ -610,4 +619,36 @@ main .sidebar {
 
 .free-course .course-item__bottom p span {
   margin-left: 10px;
+}
+
+/* Popular  */
+.popular .course-item__info .item-user__img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.popular .course-item__info {
+  display: flex;
+  gap: 5px;
+}
+
+.popular .course-item__info i {
+  background-color: #1473e6;
+  color: white;
+  font-size: 0.8rem;
+  padding: 1px;
+  height: 13px;
+  width: 13px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 13px;
+}
+
+.popular .course-item__info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
